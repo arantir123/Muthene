@@ -22,15 +22,15 @@ import scipy.stats
 import copy
 
 # fix random seed
-# random_seed = 1024
-# random.seed(random_seed)
-# np.random.seed(random_seed)
-# torch.manual_seed(random_seed)
-# torch.cuda.manual_seed(random_seed)
-# torch.cuda.manual_seed_all(random_seed)
-# torch.backends.cudnn.deterministic = True
-# torch.backends.cudnn.benchmark = False
-# torch.backends.cudnn.enabled = False
+random_seed = 1024
+random.seed(random_seed)
+np.random.seed(random_seed)
+torch.manual_seed(random_seed)
+torch.cuda.manual_seed(random_seed)
+torch.cuda.manual_seed_all(random_seed)
+torch.backends.cudnn.deterministic = True
+torch.backends.cudnn.benchmark = False
+torch.backends.cudnn.enabled = False
 
 # some overall fixed parameters
 # drug/target/cell line
@@ -407,9 +407,9 @@ if __name__ == '__main__':
                     help='Number of the attention heads in the main model. Default is 8.')
     ap.add_argument('--attnvec-dim-main', type=int, default=128,
                     help='Dimension of the attention vector in the main model. Default is 128.')
-    ap.add_argument('--rnn-type-main', default='gru',
+    ap.add_argument('--rnn-type-main', default='bi-gru',
                     help='Type of the aggregator in the main model. Default is bi-gru.')
-    ap.add_argument('--epoch', type=int, default=15, help='Number of epochs. Default is 20.')
+    ap.add_argument('--epoch', type=int, default=20, help='Number of epochs. Default is 20.')
     ap.add_argument('--patience', type=int, default=8, help='Patience. Default is 8.')
     ap.add_argument('--batch-size', type=int, default=32,
                     help='Batch size. Please choose an odd value, because of the way of calculating val/test labels of our model. Default is 32.')
