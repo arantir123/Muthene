@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/utils" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pretrained" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/preprocessed" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/preprocessed/DTIGNN_processed_luo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/preprocessed/DTIGNN_processed_luo/0" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/preprocessed/DTIGNN_case_study_luo" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="TestRunnerService">
+    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
+  </component>
+</module>

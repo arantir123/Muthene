@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3cdbd2c3-783e-4716-a13e-0c3e3c9f9f17" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/HNE_MA_DDI$DDI_prediction_test4_backup.coverage" NAME="DDI_prediction_test4_backup Coverage Results" MODIFIED="1649071889877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HNEMA_DDI_master$HNEMA_evaluation_backup.coverage" NAME="HNEMA_evaluation_backup Coverage Results" MODIFIED="1649324118740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HNE_MA$run_dataset_Luo_2.coverage" NAME="run_dataset_Luo_2 Coverage Results" MODIFIED="1636603037720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HNE_MA$run_model_evaluation.coverage" NAME="run_model_evaluation Coverage Results" MODIFIED="1639729218920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HNE_MA$simple_case_study_Luo.coverage" NAME="simple_case_study_Luo Coverage Results" MODIFIED="1636733583070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HNE_MA_DDI$DDI_prediction_test5.coverage" NAME="DDI_prediction_test5 Coverage Results" MODIFIED="1649071628480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HNE_MA_DDI$DDI_prediction_test2.coverage" NAME="DDI_prediction_test2 Coverage Results" MODIFIED="1648053041465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HNE_MA_DDI$DDI_prediction_test5_backup.coverage" NAME="DDI_prediction_test5_backup Coverage Results" MODIFIED="1649069569529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HNE_MA$run_dataset_Luo.coverage" NAME="run_dataset_Luo Coverage Results" MODIFIED="1636706186925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HNE_MA_DDI$DDI_prediction_test2_backup6.coverage" NAME="DDI_prediction_test2_backup6 Coverage Results" MODIFIED="1649104780829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HNE_MA_DDI$DDI_prediction_test2_backup3.coverage" NAME="DDI_prediction_test2_backup3 Coverage Results" MODIFIED="1649272021082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HNE_MA_DDI$DDI_prediction_test2_backup.coverage" NAME="DDI_prediction_test2_backup Coverage Results" MODIFIED="1647796433387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HNE_MA_DDI$DDI_prediction_test2_backup5.coverage" NAME="DDI_prediction_test2_backup5 Coverage Results" MODIFIED="1649149766909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HNE_MA_DDI$DDI_prediction_test4.coverage" NAME="DDI_prediction_test4 Coverage Results" MODIFIED="1648055524537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HNE_MA_DDI$DDI_prediction_test1.coverage" NAME="DDI_prediction_test1 Coverage Results" MODIFIED="1647439723124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HNEMA_DDI_master$HNEMA_evaluation.coverage" NAME="HNEMA_evaluation Coverage Results" MODIFIED="1649324403334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HNE_MA$run_dataset_Luo__1_.coverage" NAME="run_dataset_Luo (1) Coverage Results" MODIFIED="1636880389083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HNE_MA_DDI$DDI_prediction_test2_backup4.coverage" NAME="DDI_prediction_test2_backup4 Coverage Results" MODIFIED="1648213321357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HNE_MA$run_case_study_Luo.coverage" NAME="run_case_study_Luo Coverage Results" MODIFIED="1636471234527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HNE_MA_DDI$DDI_prediction_test3.coverage" NAME="DDI_prediction_test3 Coverage Results" MODIFIED="1647348816050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HNEMA_evaluation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="411" column="51" selection-start-line="411" selection-start-column="51" selection-end-line="411" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dataset_processing_demo_HNEMA.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/HNEMA_link_prediction.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="99" selection-start-line="99" selection-end-line="99" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/Trans_encoder.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>item</find>
+      <find>USER</find>
+      <find>expected_metapaths</find>
+      <find>etypes_lists</find>
+      <find>no_masks</find>
+      <find>parse_adjlist</find>
+      <find>index_generator</find>
+      <find>parse_minibatch</find>
+      <find>user</find>
+      <find>num_epochs</find>
+      <find>batch</find>
+      <find>cat</find>
+      <find>se</find>
+      <find>lr_scheduler</find>
+      <find>print</find>
+      <find>lr</find>
+      <find>scheduler</find>
+      <find>dropout_rate</find>
+      <find>num_cellline</find>
+      <find>num_target</find>
+      <find>num_drug</find>
+      <find>DGLDataset</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/utils/run_dataset_Luo_.py" />
+        <option value="$PROJECT_DIR$/run_dataset_Luo_.py" />
+        <option value="$PROJECT_DIR$/run_case_study_Luo.py" />
+        <option value="$PROJECT_DIR$/run_dataset_Luo_2.py" />
+        <option value="$PROJECT_DIR$/simple_case_study_Luo.py" />
+        <option value="$PROJECT_DIR$/pretrained/bipart_graph_utils.py" />
+        <option value="$PROJECT_DIR$/run_dataset_Luo.py" />
+        <option value="$PROJECT_DIR$/preprocess/case_study_HNEMA_Luo.ipynb" />
+        <option value="$PROJECT_DIR$/preprocessed/case_study_HNEMA_Luo.ipynb" />
+        <option value="$PROJECT_DIR$/run_simple_case_study.py" />
+        <option value="E:/Anaconda3/Scripts/activate.bat" />
+        <option value="$PROJECT_DIR$/preprocess_HNEMA_Luo.ipynb" />
+        <option value="$PROJECT_DIR$/case_study_HNEMA_Luo.ipynb" />
+        <option value="$PROJECT_DIR$/pretrained/bipart_data_utils.py" />
+        <option value="$PROJECT_DIR$/pretrained/bipart_graph.py" />
+        <option value="$PROJECT_DIR$/pretrained/bipart_lsh.py" />
+        <option value="$PROJECT_DIR$/pretrained/bipart_main.py" />
+        <option value="$PROJECT_DIR$/run_model_evaluation.py" />
+        <option value="$PROJECT_DIR$/model/Drug_encoder.py" />
+        <option value="$PROJECT_DIR$/DDI_prediction_test1_backup.py" />
+        <option value="$PROJECT_DIR$/DDI_prediction_test1.py" />
+        <option value="$PROJECT_DIR$/DDI_prediction_test3.py" />
+        <option value="$PROJECT_DIR$/DDI_prediction_test2_backup2.py" />
+        <option value="$PROJECT_DIR$/DDI_prediction_test2_backup.py" />
+        <option value="$PROJECT_DIR$/DDI_prediction_test4.py" />
+        <option value="$PROJECT_DIR$/DDI_prediction_test2.py" />
+        <option value="$PROJECT_DIR$/model/main_HNEMA.py" />
+        <option value="$PROJECT_DIR$/DDI_prediction_test4_backup.py" />
+        <option value="$PROJECT_DIR$/DDI_prediction_test5.py" />
+        <option value="$PROJECT_DIR$/DDI_prediction_test5_backup.py" />
+        <option value="$PROJECT_DIR$/DDI_prediction_test2_backup4.py" />
+        <option value="$PROJECT_DIR$/DDI_prediction_test2_backup6.py" />
+        <option value="$PROJECT_DIR$/model/Auxiliary_networks.py" />
+        <option value="$PROJECT_DIR$/model/base_HNEMA.py" />
+        <option value="$PROJECT_DIR$/utils/tools.py" />
+        <option value="$PROJECT_DIR$/utils/pytorchtools.py" />
+        <option value="$PROJECT_DIR$/DDI_prediction_test2_backup3.py" />
+        <option value="$PROJECT_DIR$/model/Trans_encoder.py" />
+        <option value="$PROJECT_DIR$/DDI_prediction_test2_backup5.py" />
+        <option value="$PROJECT_DIR$/model/HNEMA_link_prediction.py" />
+        <option value="$PROJECT_DIR$/utils/data.py" />
+        <option value="$PROJECT_DIR$/HNEMA_evaluation_backup.py" />
+        <option value="$PROJECT_DIR$/HNEMA_evaluation.py" />
+        <option value="$PROJECT_DIR$/dataset_processing_demo_HNEMA.ipynb" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-6" />
+    <option name="width" value="1030" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="HNEMA-DDI-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HNEMA-DDI-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HNEMA-DDI-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HNEMA-DDI-master" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\B\PROJECT B2_2\raw code\HNEMA-DDI-master" />
+      <recent name="D:\B\PROJECT B2_2\raw code\HNEMA-DDI-master\data\data4training_model" />
+      <recent name="D:\B\PROJECT B2_2\raw code\HNE-MA-DDI" />
+      <recent name="D:\B\PROJECT B2\raw code\HNE-MA\data\original_data_luo" />
+      <recent name="D:\B\PROJECT B2\raw code\HNE-MA\preprocessed\DTIGNN_processed_luo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\B\PROJECT B2\raw code\HNE-MA" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.HNEMA_evaluation">
+    <configuration name="DDI_prediction_test2_backup3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="HNE-MA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\B\PROJECT B2_2\raw code\HNEMA-DDI-master\HNEMA_evaluation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DDI_prediction_test2_backup5" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="HNE-MA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\B\PROJECT B2_2\raw code\HNEMA-DDI-master\HNEMA_evaluation_backup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DDI_prediction_test2_backup6" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="HNE-MA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DDI_prediction_test2_backup6.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="HNEMA_evaluation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="HNE-MA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HNEMA_evaluation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="HNEMA_evaluation_backup" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="HNE-MA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HNEMA_evaluation_backup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.HNEMA_evaluation" />
+        <item itemvalue="Python.HNEMA_evaluation_backup" />
+        <item itemvalue="Python.DDI_prediction_test2_backup3" />
+        <item itemvalue="Python.DDI_prediction_test2_backup5" />
+        <item itemvalue="Python.DDI_prediction_test2_backup6" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3cdbd2c3-783e-4716-a13e-0c3e3c9f9f17" name="Default Changelist" comment="" />
+      <created>1636284870976</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636284870976</updated>
+      <workItem from="1636284872612" duration="30000" />
+      <workItem from="1636284924449" duration="30195000" />
+      <workItem from="1636442492055" duration="2532000" />
+      <workItem from="1636449839502" duration="8990000" />
+      <workItem from="1636467251001" duration="3692000" />
+      <workItem from="1636471108596" duration="1367000" />
+      <workItem from="1636510937936" duration="9671000" />
+      <workItem from="1636529335335" duration="26261000" />
+      <workItem from="1636705708260" duration="1097000" />
+      <workItem from="1636723925146" duration="9151000" />
+      <workItem from="1636865901457" duration="8943000" />
+      <workItem from="1636889741047" duration="235000" />
+      <workItem from="1636944112822" duration="619000" />
+      <workItem from="1636979592430" duration="130000" />
+      <workItem from="1637029174958" duration="20196000" />
+      <workItem from="1637073304724" duration="853000" />
+      <workItem from="1637116009404" duration="236000" />
+      <workItem from="1637118473558" duration="493000" />
+      <workItem from="1637123205726" duration="185000" />
+      <workItem from="1637250089151" duration="60000" />
+      <workItem from="1637250564039" duration="64000" />
+      <workItem from="1637335627005" duration="156000" />
+      <workItem from="1637639968238" duration="621000" />
+      <workItem from="1637667241959" duration="9000" />
+      <workItem from="1637669074734" duration="100000" />
+      <workItem from="1637671739511" duration="2014000" />
+      <workItem from="1637722448732" duration="216000" />
+      <workItem from="1638775429010" duration="3638000" />
+      <workItem from="1638795747993" duration="1518000" />
+      <workItem from="1638797321286" duration="413000" />
+      <workItem from="1638797868595" duration="1153000" />
+      <workItem from="1639050797323" duration="429000" />
+      <workItem from="1639727508517" duration="48000" />
+      <workItem from="1639729181214" duration="192000" />
+      <workItem from="1639828318894" duration="65000" />
+      <workItem from="1640065100151" duration="908000" />
+      <workItem from="1640234717029" duration="156000" />
+      <workItem from="1640602861296" duration="5829000" />
+      <workItem from="1640878067087" duration="2382000" />
+      <workItem from="1642713325498" duration="768000" />
+      <workItem from="1643105773195" duration="1466000" />
+      <workItem from="1645030536706" duration="5161000" />
+      <workItem from="1645697836343" duration="1857000" />
+      <workItem from="1646130955756" duration="98962000" />
+      <workItem from="1646568819450" duration="82343000" />
+      <workItem from="1647012308515" duration="18876000" />
+      <workItem from="1647118325052" duration="6641000" />
+      <workItem from="1647129991413" duration="12018000" />
+      <workItem from="1647178206053" duration="39445000" />
+      <workItem from="1647338315772" duration="33798000" />
+      <workItem from="1647510665169" duration="152296000" />
+      <workItem from="1648325766588" duration="76733000" />
+      <workItem from="1649062800867" duration="37482000" />
+      <workItem from="1649273607290" duration="9037000" />
+      <workItem from="1649283510569" duration="18385000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="740115000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29424307" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32719395" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.552546" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32936078" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.032502707" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32889125" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://E:/Anaconda3/Scripts/activate.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkpoint/checkpoint_HNEMA.pt" />
+    <entry file="file://$PROJECT_DIR$/preprocess_HNEMA_Luo.ipynb" />
+    <entry file="file://$PROJECT_DIR$/run_simple_case_study.py" />
+    <entry file="file://$PROJECT_DIR$/case_study_HNEMA_Luo.ipynb" />
+    <entry file="file://$PROJECT_DIR$/pretrained/bipart_graph_utils.py" />
+    <entry file="file://$PROJECT_DIR$/pretrained/bipart_graph.py" />
+    <entry file="file://$PROJECT_DIR$/pretrained/bipart_lsh.py" />
+    <entry file="file://$PROJECT_DIR$/pretrained/bipart_data_utils.py" />
+    <entry file="file://E:/Anaconda3/envs/pytorch19/Lib/site-packages/numpy/lib/npyio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2715">
+          <caret line="254" selection-start-line="254" selection-end-line="254" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Anaconda3/envs/pytorch19/Lib/site-packages/dgl/dataloading/pytorch/dataloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="902" selection-start-line="902" selection-end-line="902" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Anaconda3/envs/pytorch19/Lib/site-packages/torch/nn/modules/sparse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="159" selection-start-line="159" selection-end-line="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Anaconda3/envs/pytorch19/Lib/site-packages/numpy/lib/format.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="726" selection-start-line="726" selection-end-line="726" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Anaconda3/envs/pytorch19/Lib/site-packages/dgl/heterograph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="4206" selection-start-line="4206" selection-end-line="4206" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Anaconda3/envs/pytorch19/Lib/site-packages/dgl/view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="195" selection-start-line="195" selection-end-line="195" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Anaconda3/envs/pytorch19/Lib/_collections_abc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="840" selection-start-line="840" selection-end-line="840" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrained/bipart_main.py" />
+    <entry file="file://E:/Anaconda3/envs/pytorch19/Lib/site-packages/torch/serialization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="593" selection-start-line="593" selection-end-line="593" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Anaconda3/envs/pytorch19/Lib/site-packages/sklearn/metrics/_ranking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="326" selection-start-line="326" selection-end-line="326" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Anaconda3/envs/pytorch19/Lib/site-packages/sklearn/metrics/_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="119" selection-start-line="119" selection-end-line="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Anaconda3/envs/pytorch19/Lib/site-packages/sklearn/utils/validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="746">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../refer code/drug_combination-master/drug_combination-master/data/Gene_expression_raw/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://E:/Anaconda3/envs/pytorch19/Lib/site-packages/dgl/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Anaconda3/envs/pytorch19/Lib/site-packages/torch/nn/modules/loss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="747">
+          <caret line="611" selection-start-line="611" selection-end-line="611" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Anaconda3/envs/pytorch19/Lib/site-packages/torch/nn/functional.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="747">
+          <caret line="2892" selection-start-line="2892" selection-end-line="2892" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Anaconda3/envs/pytorch19/Lib/site-packages/torch/nn/modules/module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="1050" selection-start-line="1050" selection-end-line="1050" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/main_HNEMA.py" />
+    <entry file="file://$PROJECT_DIR$/DDI_prediction_test4_backup.py" />
+    <entry file="file://$PROJECT_DIR$/DDI_prediction_test5_backup.py" />
+    <entry file="file://$PROJECT_DIR$/run_model_evaluation.py" />
+    <entry file="file://$PROJECT_DIR$/utils/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="119" column="61" selection-start-line="119" selection-start-column="61" selection-end-line="119" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/pytorchtools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/base_HNEMA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5421">
+          <caret line="250" column="33" selection-start-line="250" selection-start-column="33" selection-end-line="250" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DDI_prediction_test1.py" />
+    <entry file="file://$PROJECT_DIR$/DDI_prediction_test1_backup.py" />
+    <entry file="file://$PROJECT_DIR$/DDI_prediction_test2.py" />
+    <entry file="file://$PROJECT_DIR$/DDI_prediction_test2_backup.py" />
+    <entry file="file://$PROJECT_DIR$/DDI_prediction_test2_backup2.py" />
+    <entry file="file://$PROJECT_DIR$/DDI_prediction_test2_backup4.py" />
+    <entry file="file://$PROJECT_DIR$/DDI_prediction_test2_backup6.py" />
+    <entry file="file://$PROJECT_DIR$/DDI_prediction_test3.py" />
+    <entry file="file://$PROJECT_DIR$/DDI_prediction_test4.py" />
+    <entry file="file://$PROJECT_DIR$/DDI_prediction_test5.py" />
+    <entry file="file://$PROJECT_DIR$/model/Auxiliary_networks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="137" column="50" selection-start-line="137" selection-start-column="50" selection-end-line="137" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data4training_model/0/0-1-0.adjlist">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Trans_encoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/HNEMA_link_prediction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="89" column="17" selection-start-line="89" selection-start-column="15" selection-end-line="89" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HNEMA_evaluation_backup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-295">
+          <caret line="426" column="46" lean-forward="true" selection-start-line="426" selection-start-column="46" selection-end-line="426" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HNEMA_evaluation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="411" column="51" selection-start-line="411" selection-start-column="51" selection-end-line="411" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset_processing_demo_HNEMA.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
