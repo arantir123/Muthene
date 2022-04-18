@@ -2,7 +2,7 @@
 Multi-task Heterogeneous Network Learning for Therapeutic Synergy Score Predictions
 
 1. Download all the files.
-2. Unzip data.rar to the data folder.
+2. Unzip data.rar to the "data" folder.
 3. Tune the hyper-parameters following the instruction in run_model_evaluation.py.
 4. Run run_model_evaluation.py to get evaluation results.
 
