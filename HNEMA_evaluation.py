@@ -1,3 +1,5 @@
+# Instead of the framework name in the manuscript (i.e., Muthene), we use HNEMA (Heterogeneous Network Embedding with Meta-path Aggregation) here to define the function.
+# Besides, we sincerely thank Fu et al. open the source code of MAGNN at https://github.com/cynricfu/MAGNN. MAGNN helps us to finish message passing of nodes on heterogeneous network.
 import time
 import argparse
 import torch
@@ -22,19 +24,20 @@ import scipy.stats
 import copy
 
 # fix random seed
-random_seed = 1024
-random.seed(random_seed)
-np.random.seed(random_seed)
-torch.manual_seed(random_seed)
-torch.cuda.manual_seed(random_seed)
-torch.cuda.manual_seed_all(random_seed)
-torch.backends.cudnn.deterministic = True
-torch.backends.cudnn.benchmark = False
-torch.backends.cudnn.enabled = False
+# random_seed = 1024
+# random.seed(random_seed)
+# np.random.seed(random_seed)
+# torch.manual_seed(random_seed)
+# torch.cuda.manual_seed(random_seed)
+# torch.cuda.manual_seed_all(random_seed)
+# torch.backends.cudnn.deterministic = True
+# torch.backends.cudnn.benchmark = False
+# torch.backends.cudnn.enabled = False
 
 # some overall fixed parameters
 # drug/target/cell line
 num_ntype = 3
+# for the main_net
 dropout_rate = 0.5
 lr = 0.005
 weight_decay = 0.001
@@ -162,7 +165,6 @@ def run_model_HNEMA_DDI(root_prefix, hidden_dim_main, num_heads_main, attnvec_di
         dur1 = []  # data processing before feeding data in an iteration
         dur2 = []  # the training time for an iteration
         dur3 = []  # the time to use grad to update parameters of the model
-
 
         train_sample_idx_generator = index_generator(batch_size=batch_size, num_data=len(train_drug_drug_samples))
         # reason for batch_size=batch_size//2: to generate the drug-drug pairs with the opposite drug order in val/test phases
@@ -424,7 +426,8 @@ if __name__ == '__main__':
     # part2 (for other modules in HNEMA)
     ap.add_argument('--hidden-dim-aux', type=int, default=64,
                     help='Dimension of generated cell line embeddings. Default is 64.')
-    ap.add_argument('--loss-ratio-te', type=float, default=1,
+    # loss-ratio-te is a relatively sensitive important hyper-parameter in our experiments, 1 or 10 usually generates good results
+    ap.add_argument('--loss-ratio-te', type=float, default=10,
                     help='The weight percentage of therapeutic effect loss in the total loss')
     ap.add_argument('--loss-ratio-se', type=float, default=1,
                     help='The weight percentage of adverse effect loss in the total loss')
@@ -434,7 +437,7 @@ if __name__ == '__main__':
                     help='The dropout rate in the DNN TE predictor')
     ap.add_argument('--pred_out_dropout', type=float, default=0.5,
                     help='The dropout rate in the DNN TE predictor')
-    ap.add_argument('--output_concat', default=False,
+    ap.add_argument('--output_concat', default=True,
                     help='Whether put the adverse effect output into therapeutiec effect prediction')
 
     args = ap.parse_args()
