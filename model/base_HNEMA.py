@@ -146,6 +146,8 @@ class HNEMA_metapath_specific(nn.Module):
                 # hidden contains comprehensive information extracted from the whole sequence
                 # source_node_embed = output[0]
                 target_node_embed = output[-1]
+                # print(output.size())
+                # torch.Size([3, 62, 512])
 
                 # in this case, torch.split equals to tensor.reshape
                 target_node_embed = target_node_embed.reshape(-1, self.out_dim, self.num_heads).permute(

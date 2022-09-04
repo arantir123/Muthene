@@ -99,7 +99,6 @@ class HNEMA_link_prediction(nn.Module):
         g_lists, features_list, type_mask, edge_metapath_indices_lists, target_idx_lists = inputs
 
         # node type specific transformation
-        # type_mask是药物加上靶点的总个数
         transformed_features = torch.zeros(type_mask.shape[0], self.hidden_dim, device=features_list[0].device)
         for i, fc in enumerate(self.fc_list):
             node_indices = np.where(type_mask == i)[0]

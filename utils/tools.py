@@ -10,7 +10,7 @@ def parse_adjlist(adjlist, edge_metapath_indices, samples=None, exclude=None, of
     for row, indices in zip(adjlist, edge_metapath_indices):
         row_parsed = list(map(int, row.split(' ')))
         nodes.add(row_parsed[0])
-        # 如果存在metapath邻居
+        # if meta-path based neighbors exist
         if len(row_parsed) > 1:
             # sampling neighbors
             if samples is None:
@@ -28,18 +28,16 @@ def parse_adjlist(adjlist, edge_metapath_indices, samples=None, exclude=None, of
                     result_indices.append(indices)
             else:
                 # undersampling frequent neighbors
-                # unique是去重后的结果（排序后）,counts是根据排序给定每个元素的出现次数
                 unique, counts = np.unique(row_parsed[1:], return_counts=True)
                 p = []
                 for count in counts:
                     p += [(count ** (3 / 4)) / count] * count
                 p = np.array(p)
                 p = p / p.sum()
-                # p： 给出每个元素的出现概率(按照row parsed排序后的元素顺序给出）
+
                 samples = min(samples, len(row_parsed) - 1)
-                # replace=False每个值只能被选择一次，这里p是为了确定其中元素的出现概率,此时row_parse中的元素也是排序的，可以与sampled idx一一对应
                 sampled_idx = np.sort(np.random.choice(len(row_parsed) - 1, samples, replace=False, p=p))
-                # 若使用use_mask(这也是唯一区别): exclude=drug_target_batch，也就是当前batch中的药物对
+
                 if exclude is not None:
                     if mode == 0:
                         mask = [False if [u1, a1 - offset] in exclude or [u2, a2 - offset] in exclude else True for
@@ -47,7 +45,7 @@ def parse_adjlist(adjlist, edge_metapath_indices, samples=None, exclude=None, of
                     else:
                         mask = [False if [u1, a1 - offset] in exclude or [u2, a2 - offset] in exclude else True for
                                 a1, u1, a2, u2 in indices[sampled_idx][:, [0, 1, -1, -2]]]
-                    # sampled_idx是从row_parse的第一个元素开始选起的，而不是第0个
+
                     neighbors = np.array([row_parsed[i + 1] for i in sampled_idx])[mask]
                     result_indices.append(indices[sampled_idx][mask])
                 else:
@@ -67,7 +65,7 @@ def parse_adjlist(adjlist, edge_metapath_indices, samples=None, exclude=None, of
             edges.append((row_parsed[0], dst))
 
     mapping = {map_from: map_to for map_to, map_from in enumerate(sorted(nodes))}
-    # 根据该映射将edges也用batch index进行映射
+    # use mapping to transform edge ids
     edges = list(map(lambda tup: (mapping[tup[0]], mapping[tup[1]]), edges))
     result_indices = np.vstack(result_indices)
 
@@ -76,21 +74,18 @@ def parse_adjlist(adjlist, edge_metapath_indices, samples=None, exclude=None, of
 
 def parse_minibatch(adjlists_ua, edge_metapath_indices_list_ua, drug_target_batch, device, samples=None,
                         use_masks=None, offset=None):
-    # 第一个参数是每个药物节点的metapath邻居
-    # 第二个参数是以相对index存储的metapath样本信息[
-    # 第三个参数是当前batch中样本对的节点序号
+    # first parameter: meta-path based neighbors for each drug node
+    # second parameter: nodes in every meta-path instance stored using relative ids
+    # third parameter: node ids of drug-drug pairs in current batch
     g_lists = [[], []]
     result_indices_lists = [[], []]
     idx_batch_mapped_lists = [[], []]
     # the loop for iterating the drug node and target node
-    # 对每个mode下面所属的metapath的adj等元素进行遍历
     for mode, (adjlists, edge_metapath_indices_list) in enumerate(zip(adjlists_ua, edge_metapath_indices_list_ua)):
         # the loop for iterating every metapath of one type of node
         # the order of adjlist and indices are the same
-        # indices包含metapath样本的list
         for adjlist, indices, use_mask in zip(adjlists, edge_metapath_indices_list, use_masks[mode]):
             if use_mask:
-                # 处理药物对中前面或者后面节点的metapath子图
                 # samples=100
                 edges, result_indices, num_nodes, mapping = parse_adjlist(
                     [adjlist[row[mode]] for row in drug_target_batch],
@@ -110,7 +105,6 @@ def parse_minibatch(adjlists_ua, edge_metapath_indices_list_ua, drug_target_batc
                 sorted_index = sorted(range(len(edges)), key=lambda i: edges[i])
                 g.add_edges(*list(zip(*[(edges[i][1], edges[i][0]) for i in sorted_index])))
 
-                # result_indices是整理好顺序的该batch所对应metapath样本，可能有重复，使用绝对标签,同时其顺序与g.edges()顺序一致（由sorted_index确定）
                 result_indices = torch.LongTensor(result_indices[sorted_index]).to(device)
 
             else:

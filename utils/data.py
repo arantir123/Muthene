@@ -5,13 +5,13 @@ import pandas as pd
 from dgl.data import DGLDataset
 import torch
 import dgl
+import os
 
 
-def load_HNEMA_DDI_data_te(prefix='D:/B/PROJECT B2_2/dataset/generated_2/after_process/'):
+def load_HNEMA_DDI_data_te(prefix='D:/B/PROJECT B2_2/dataset/generated_2/after_process/'): # your folder to store the required original data
     print('the path of source file is :', prefix)
 
     # read drug adjlist files using relative index
-    # 也就是每个药物节点所对应的meta-path邻居的节点
     in_file = open(prefix + '0/0-1-0.adjlist', 'r')
     adjlist00 = [line.strip() for line in in_file]
     adjlist00 = adjlist00
@@ -29,7 +29,7 @@ def load_HNEMA_DDI_data_te(prefix='D:/B/PROJECT B2_2/dataset/generated_2/after_p
     adjlist03 = adjlist03
     in_file.close()
 
-    # 读取的是药物节点所对应的每一种元路径中所包括的所有节点（以绝对标签存储）
+    # read the metapath instance files (stored as absolute index)
     in_file = open(prefix + '0/0-1-0_idx.pickle', 'rb')
     idx00 = pickle.load(in_file)
     in_file.close()
@@ -43,20 +43,18 @@ def load_HNEMA_DDI_data_te(prefix='D:/B/PROJECT B2_2/dataset/generated_2/after_p
     idx03 = pickle.load(in_file)
     in_file.close()
 
-    # 然后读取邻接矩阵，以及存储所有节点的类型的type_mask
     # read adjacency matrix storing the all required interactions required by training
     adjM = scipy.sparse.load_npz(prefix + 'adjM.npz')
     # type_mask is a mask storing all nodes' types
     type_mask = np.load(prefix + 'node_types.npy')
 
-    # 额外读取药物、靶点、cellline、side effect symbol以及药物原子数的名称-id转换字典
-    in_file = open(prefix + 'drug2id_dict.pickle', 'rb')
+    in_file = open(prefix + 'drug2relid_dict.pickle', 'rb')
     drug2id_dict = pickle.load(in_file)
     in_file.close()
-    in_file = open(prefix + 'target2id_dict.pickle', 'rb')
+    in_file = open(prefix + 'target2relid_dict.pickle', 'rb')
     target2id_dict = pickle.load(in_file)
     in_file.close()
-    in_file = open(prefix + 'cellline2id_dict.pickle', 'rb')
+    in_file = open(prefix + 'cellline2relid_dict.pickle', 'rb')
     cellline2id_dict = pickle.load(in_file)
     in_file.close()
     in_file = open(prefix + 'se_symbol2id_dict.pickle', 'rb')
@@ -66,21 +64,59 @@ def load_HNEMA_DDI_data_te(prefix='D:/B/PROJECT B2_2/dataset/generated_2/after_p
     atomnum2id_dict = pickle.load(in_file)
     in_file.close()
 
-    # 再读取训练所需的样本以及标签
     train_val_test_drug_drug_samples = np.load(prefix + 'train_val_test_drug_drug_samples.npz')
     train_val_test_drug_drug_labels = np.load(prefix + 'train_val_test_drug_drug_labels.npz')
-    # 药物morgan信息
+    # ECFP6
     all_drug_morgan = scipy.sparse.load_npz(prefix + 'ECFP6_DNN_coomatrix.npz')
+    # CCLE cell line expression data
+    if os.path.exists(prefix + 'cellline_expression_normalized.npy'):
+        cellline_expression = np.load(prefix + 'cellline_expression_normalized.npy', allow_pickle=True)
+    else:
+        cellline_expression = np.zeros((len(cellline2id_dict), 1024))
+        print('an empty cell line expression data is generated.')
 
-    # 药物的metapath邻居，每个药物的metapath，邻接矩阵，节点类型，节点name2id，训练样本以及标签
     return [[adjlist00, adjlist01, adjlist02, adjlist03],[adjlist00, adjlist01, adjlist02, adjlist03]], \
            [[idx00, idx01, idx02, idx03],[idx00, idx01, idx02, idx03]], \
            adjM, type_mask, \
            [drug2id_dict,target2id_dict,cellline2id_dict,se_symbol2id_dict,atomnum2id_dict], \
-           train_val_test_drug_drug_samples, train_val_test_drug_drug_labels, all_drug_morgan
+           train_val_test_drug_drug_samples, train_val_test_drug_drug_labels, all_drug_morgan, cellline_expression
 
 
-# data for HNE-GIN
+def load_DNN_DDI_data_te(prefix='D:/B/PROJECT B2_2/dataset/generated_2/after_process/'): # your folder to store the required original data
+    print('the path of source file is :', prefix)
+
+    in_file = open(prefix + 'drug2relid_dict.pickle', 'rb')
+    drug2id_dict = pickle.load(in_file)
+    in_file.close()
+    in_file = open(prefix + 'target2relid_dict.pickle', 'rb')
+    target2id_dict = pickle.load(in_file)
+    in_file.close()
+    in_file = open(prefix + 'cellline2relid_dict.pickle', 'rb')
+    cellline2id_dict = pickle.load(in_file)
+    in_file.close()
+    in_file = open(prefix + 'se_symbol2id_dict.pickle', 'rb') # adverse effect name to ids
+    se_symbol2id_dict = pickle.load(in_file)
+    in_file.close()
+    in_file = open(prefix + 'atomnum2id_dict.pickle', 'rb') # atom numbers to ids
+    atomnum2id_dict = pickle.load(in_file)
+    in_file.close()
+
+    train_val_test_drug_drug_samples = np.load(prefix + 'train_val_test_drug_drug_samples.npz')
+    train_val_test_drug_drug_labels = np.load(prefix + 'train_val_test_drug_drug_labels.npz')
+    # ECFP6
+    all_drug_morgan = scipy.sparse.load_npz(prefix + 'ECFP6_DNN_coomatrix.npz')
+    # CCLE cell line expression data
+    if os.path.exists(prefix + 'cellline_expression_normalized.npy'):
+        cellline_expression = np.load(prefix + 'cellline_expression_normalized.npy', allow_pickle=True)
+    else:
+        cellline_expression = np.zeros((len(cellline2id_dict), 1024))
+        print('An empty cell line expression data is generated.')
+
+    return [drug2id_dict,target2id_dict,cellline2id_dict,se_symbol2id_dict,atomnum2id_dict], \
+           train_val_test_drug_drug_samples, train_val_test_drug_drug_labels, all_drug_morgan, cellline_expression
+
+
+# extra data for HNE-GIN (stored in './data/data4training_model/')
 class DrugStrucDataset(DGLDataset):
     def __init__(self):
         super().__init__(name='drugstruc')
@@ -121,7 +157,7 @@ class DrugStrucDataset(DGLDataset):
             atom_features = atom_features.type(torch.float32)
 
             # Create a graph and add it to the list of graphs and labels.
-            # 在这里生成每个子图的对应dgl graph
+            # create dgl graph for each molecule
             g = dgl.graph((src, dst), num_nodes=num_nodes)
             g.ndata['atom_num'] = atom_features
             self.graphs.append(g)
@@ -136,7 +172,7 @@ class DrugStrucDataset(DGLDataset):
     def __len__(self):
         return len(self.graphs)
 
-# 生成的图结构也可以直接保存到本地中
+
 # Save graphs
 # dgl.save_graphs('graph.dgl', g)
 # dgl.save_graphs('graphs.dgl', [g, sg1, sg2])
