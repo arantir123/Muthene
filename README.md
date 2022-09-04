@@ -1,5 +1,8 @@
-# Muthene
-Multi-task Heterogeneous Network Learning for Therapeutic Synergy Score Predictions
+# Multi-task Heterogeneous Network Learning for Therapeutic Synergy Score Predictions 
+
+How to use it:
+
+1. __Download our collected and compiled dataset from https://drive.google.com/file/d/11xEGdgZLXlcxUfjajbrA3eSgIMT0-evr/view?usp=sharing, and put it into your specified file folder as the original data folder. The original data folder is used to generate the model input for each independent repeat.__
 
 1. Download all the files.
 2. Unzip data.rar to the "data" folder.
