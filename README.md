@@ -1,4 +1,4 @@
-# Multi-task Heterogeneous Network Learning for Therapeutic Synergy Score Predictions 
+# Improving Therapeutic Synergy Score Predictions with Adverse Effects using Multi-task Heterogeneous Network Embedding 
 
 How to use it:
 
