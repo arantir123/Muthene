@@ -3,6 +3,7 @@
 How to use it:
 
 Step1. __Download our collected and compiled dataset from https://drive.google.com/file/d/11xEGdgZLXlcxUfjajbrA3eSgIMT0-evr/view?usp=sharing, and put it into your specified file folder as the original data folder. The original data folder is used to generate the model input for each independent repeat.__
+
 Raw Data:
 * __CCLE_expression.csv:__ Downloaded original DepMap gene expression data.
 * __drugcomb_alldruginfo_dict.pickle:__ Collected information of involved drugs.
