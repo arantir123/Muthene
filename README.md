@@ -25,7 +25,7 @@ Step3. __Follow the instruction described in each following .py file, to read th
   * __NEW_GIN_evaluation_ECFP6_CCLE_withAE.py:__ the implementation of the Muthene variant using GIN (encoding drug molecular graphs) + selected 60 cell lines (described by CCLE gene expression data) with the adverse effect prediction module.
   * __NEW_HNEMA_evaluation_ECFP6_CCLE_withoutAE.py:__ the implementation of Muthene variant using ECFP6 + selected 60 cell lines (described by CCLE gene expression data) without the adverse effect prediction module.
 
-A running example:
+A running example (including training and evaluation):
 
 python NEW_HNEMA_evaluation_ECFP6_CCLE_withAE.py --root-prefix './fold1/'
 
