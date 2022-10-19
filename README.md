@@ -26,6 +26,8 @@ Step3. __Follow the instruction described in each following .py file, to read th
   * __NEW_HNEMA_evaluation_ECFP6_CCLE_withoutAE.py:__ the implementation of Muthene variant using ECFP6 + selected 60 cell lines (described by CCLE gene expression data) without the adverse effect prediction module.
 
 A running example:
-python NEW_HNEMA_evaluation_ECFP6_CCLE_withAE.py --root-prefix './fold1/' # the file folder storing the model input (e.g. fold1)
+
+python NEW_HNEMA_evaluation_ECFP6_CCLE_withAE.py --root-prefix './fold1/' 
+# the file folder storing the model input (e.g. fold1)
 
 Instead of the framework name in the manuscript (i.e., Muthene), we use HNEMA (Heterogeneous Network Embedding with Meta-path Aggregation) here to define the function.
