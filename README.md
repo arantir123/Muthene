@@ -33,6 +33,6 @@ python NEW_HNEMA_evaluation_ECFP6_CCLE_withAE.py --root-prefix './fold1/'
 
 __How to predict different types of synergy scores:__
 
-There is a bulit-in hyper-parameter in each above .py file named predicted_te_type, set it to 1, 2, 3, 4 can predict ZIP, Loewe, HSA, and Bliss, respectively.
+There is a bulit-in hyper-parameter in each above .py file named predicted_te_type, set it to 1, 2, 3, 4 can make the model predict ZIP, Loewe, HSA, and Bliss, respectively.
 
 Instead of the framework name in the manuscript (i.e., Muthene), we use HNEMA (Heterogeneous Network Embedding with Meta-path Aggregation) here to define the function.
