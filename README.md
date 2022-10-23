@@ -25,10 +25,14 @@ Step3. __Follow the instruction described in each following .py file, to read th
   * __NEW_GIN_evaluation_ECFP6_CCLE_withAE.py:__ the implementation of the Muthene variant using GIN (encoding drug molecular graphs) + selected 60 cell lines (described by CCLE gene expression data) with the adverse effect prediction module.
   * __NEW_HNEMA_evaluation_ECFP6_CCLE_withoutAE.py:__ the implementation of Muthene variant using ECFP6 + selected 60 cell lines (described by CCLE gene expression data) without the adverse effect prediction module.
 
-A running example (including training and evaluation):
+__A running example (including training and evaluation):__
 
 python NEW_HNEMA_evaluation_ECFP6_CCLE_withAE.py --root-prefix './fold1/'
 
 (--root-prefix: the file folder storing the generated model input, e.g., fold1)
+
+__How to predict different types of synergy scores:__
+
+There is a bulit-in hyper-parameter in each above .py file named predicted_te_type, set it to 1, 2, 3, 4 can predict ZIP, Loewe, HSA, and Bliss, respectively.
 
 Instead of the framework name in the manuscript (i.e., Muthene), we use HNEMA (Heterogeneous Network Embedding with Meta-path Aggregation) here to define the function.
