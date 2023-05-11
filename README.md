@@ -2,7 +2,7 @@
 
 How to use it:
 
-Basic Environment:
+Basic Environment (Windows or Linux):
 * __Python 3.6.13__
 * __Pytorch 1.10.2__
 * __CUDA tool kit 11.3.1__
