@@ -1,5 +1,7 @@
 # Improving Therapeutic Synergy Score Predictions with Adverse Effects using Multi-task Heterogeneous Network Embedding 
 
+__The accepted version link: https://academic.oup.com/bib/article/24/1/bbac564/6958504__
+
 How to use it:
 
 Basic Environment (Windows or Linux):
