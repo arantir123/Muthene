@@ -2,9 +2,9 @@
 
 __The accepted version link: https://academic.oup.com/bib/article/24/1/bbac564/6958504__
 
-How to use it:
+__How to use it:__
 
-Basic Environment (Windows or Linux):
+__Basic Environment (Windows or Linux):__
 * __Python 3.6.13__
 * __Pytorch 1.10.2__
 * __CUDA tool kit 11.3.1__
