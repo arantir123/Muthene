@@ -4,7 +4,7 @@ __The accepted version link: https://academic.oup.com/bib/article/24/1/bbac564/6
 
 __How to use it:__
 
-__Basic Environment (Windows or Linux):__
+__Our Test Environment (Windows or Linux, the higher environment version beyond this might be also feasible):__
 * __Python 3.6.13__
 * __Pytorch 1.10.2__
 * __CUDA tool kit 11.3.1__
