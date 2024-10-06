@@ -1,5 +1,5 @@
 # Muthene
-# Improving therapeutic synergy score predictions with adverse effects using multi-task heterogeneous network embedding 
+### Improving therapeutic synergy score predictions with adverse effects using multi-task heterogeneous network embedding 
 
 __The accepted version link: [https://academic.oup.com/bib/article/24/1/bbac564/6958504]__
 
